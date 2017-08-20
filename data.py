@@ -25,7 +25,7 @@ scrabble_amounts = [(1, "J K Q X Z"), (2, "B C F H M P V W Y"), (3, "G"),
 POUCH = []
 for amount, letters in scrabble_amounts:
     for letter in letters.split():
-        POUCH.apend(amount * letter)
+        POUCH.extend(list(amount * letter))
 
 # Check we have the right number (no blanks in this simple game)
 assert len(POUCH) == 98
