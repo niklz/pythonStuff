@@ -67,7 +67,9 @@ The final program should perform the following steps:
 5. Calculate the given word value and show it to the player.
 
 6.  Calculate the optimal word (= max word value) by checking all permutations of the 7 letters of 
-the draw, cross-checking with the set of valid words. 
+the draw, cross-checking with the set of valid words. Hint: looking up elements one at a time in a list is 
+going to be slow if the list is large! Consider using one of Pythons [other data structures](https://docs.python.org/3/tutorial/datastructures.html)
+to represent the valid words. 
 
 7. Show the player what the optimal word and its value is.
 
