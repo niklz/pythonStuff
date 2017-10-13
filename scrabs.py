@@ -33,3 +33,18 @@ def calc_list_values(words):
         wordVals.append((word, calc_word_value(word)))
         
     return wordVals
+
+
+# %% function for checking if word is contstructable from group of letters
+def isWordValid(word, letters):
+    letters_test = [x.lower() for x in letters]
+    check =  len(word)
+    for idx in range(check):
+        letter = word[idx]
+        if letter in letters_test:
+            letters_test.remove(letter)
+            check -= 1
+            if(check == 0):           
+                return True
+        else:
+            return False
