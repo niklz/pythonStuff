@@ -47,8 +47,6 @@ for word in wordsFilter:
             wordsCheck.remove(word)
 
 
-
-
 #- Score the words
 scores = scrabs.calc_list_values(wordsCheck)
 print(scores)
